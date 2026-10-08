@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-10-08T17:24:14Z",
+  "window": {
+    "start": "2026-10-01T17:24:14Z",
+    "end": "2026-10-08T17:24:14Z"
+  },
+  "source": "https://www.seismicportal.eu/fdsnws/event/1/query",
+  "license": "CC BY 4.0",
+  "credit": "Credit: EMSC-CSEM SeismicPortal, https://www.seismicportal.eu",
+  "queries": [
+    {
+      "region": "israel",
+      "name": "ישראל",
+      "minmag": 2.5,
+      "box": {
+        "minlat": 29.3,
+        "maxlat": 33.5,
+        "minlon": 34.2,
+        "maxlon": 35.9
+      },
+      "count": 0,
+      "query_url": "https://www.seismicportal.eu/fdsnws/event/1/query?format=json&starttime=2026-10-01T17%3A24%3A14&endtime=2026-10-08T17%3A24%3A14&minmag=2.5&orderby=time&limit=20000&minlat=29.3&maxlat=33.5&minlon=34.2&maxlon=35.9"
+    },
+    {
+      "region": "neighbors",
+      "name": "שכנות והשבר הסורי-אפריקאי",
+      "minmag": 3.5,
+      "box": {
+        "minlat": 27.0,
+        "maxlat": 37.5,
+        "minlon": 31.0,
+        "maxlon": 42.0
+      },
+      "count": 0,
+      "query_url": "https://www.seismicportal.eu/fdsnws/event/1/query?format=json&starttime=2026-10-01T17%3A24%3A14&endtime=2026-10-08T17%3A24%3A14&minmag=3.5&orderby=time&limit=20000&minlat=27.0&maxlat=37.5&minlon=31.0&maxlon=42.0"
+    },
+    {
+      "region": "world",
+      "name": "עולם",
+      "minmag": 6.0,
+      "box": null,
+      "count": 1,
+      "query_url": "https://www.seismicportal.eu/fdsnws/event/1/query?format=json&starttime=2026-10-01T17%3A24%3A14&endtime=2026-10-08T17%3A24%3A14&minmag=6.0&orderby=time&limit=20000"
+    }
+  ],
+  "events": [
+    {
+      "domain": "earthquake",
+      "date": "2026-10-08T09:00:09.38Z",
+      "severity": 6.3,
+      "title": "M6.3 VANUATU",
+      "link": "https://www.seismicportal.eu/eventdetails.html?unid=20261008_0000124",
+      "region": "world",
+      "magnitude": 6.3,
+      "magtype": "mw",
+      "lat": -15.5306,
+      "lon": 168.2879,
+      "depth_km": 10.0,
+      "emsc_unid": "20261008_0000124",
+      "source": "EMSC"
+    }
+  ]
+}
