@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/thenoamkalich/ops-continuity-watch/schema/event.schema.json",
+  "title": "Event",
+  "description": "פריט שנאסף ממקור פתוח. לפי docs/DASHBOARD_SPEC.md סעיף 7. הוולידציה בפועל ב-scripts/validate.py.",
+  "type": "object",
+  "required": ["id", "domain", "date", "severity", "title", "url", "source", "lat", "lon", "collected_at"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {"type": "string", "format": "uuid"},
+    "domain": {"enum": ["geopolitical", "kinetic", "supply_chain", "cyber", "climate", "health"]},
+    "date": {"type": "string", "format": "date"},
+    "severity": {"type": "integer", "minimum": 1, "maximum": 5},
+    "title": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "pattern": "^https?://"},
+    "source": {"type": "string", "minLength": 1},
+    "lat": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "lon": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "collected_at": {"type": "string", "format": "date-time"}
+  }
+}
