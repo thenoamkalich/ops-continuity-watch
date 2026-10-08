@@ -1,0 +1,17 @@
+{
+  "_DUMMY": "נתוני דמה לבדיקות בלבד. לא אירועים אמיתיים. אין להציג בדשבורד.",
+  "events": [
+    {"id": "00000000-0000-4000-8000-000000000001", "domain": "cyber", "date": "2026-01-01",
+     "severity": 3, "title": "DUMMY valid item", "url": "https://example.invalid/dummy/1",
+     "source": "DUMMY", "lat": null, "lon": null, "collected_at": "2026-01-01T00:00:00Z"},
+    {"id": "00000000-0000-4000-8000-000000000002", "domain": "climate", "date": "2026-01-02",
+     "severity": 5, "title": "DUMMY valid item with location", "url": "https://example.invalid/dummy/2",
+     "source": "DUMMY", "lat": 31.5, "lon": 34.8, "collected_at": "2026-01-02T00:00:00+00:00"},
+    {"id": "not-a-uuid", "domain": "cyber", "date": "2026-01-03",
+     "severity": 9, "title": "DUMMY invalid item", "url": "ftp://example.invalid/dummy/3",
+     "source": "DUMMY", "lat": 31.5, "lon": null, "collected_at": "2026-01-03"},
+    {"id": "00000000-0000-4000-8000-000000000004", "domain": "earthquake", "date": "2026-01-04",
+     "severity": 2, "title": "", "source": "DUMMY", "lat": null, "lon": null,
+     "collected_at": "2026-01-04T00:00:00Z"}
+  ]
+}

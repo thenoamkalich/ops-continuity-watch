@@ -1,0 +1,21 @@
+{
+  "_status": "הצעה, טרם אושרה סופית. משקלות לפי docs/HANDOFF.md, תוויות וסף מגמה לפי docs/DASHBOARD_SPEC.md סעיף 4.",
+  "domains": [
+    {"id": "geopolitical", "name": "גאו-פוליטי", "weight": 0.20},
+    {"id": "kinetic", "name": "קינטי", "weight": 0.20},
+    {"id": "supply_chain", "name": "שרשרת אספקה ואנרגיה", "weight": 0.20},
+    {"id": "cyber", "name": "סייבר", "weight": 0.15},
+    {"id": "climate", "name": "אקלים וטבע", "weight": 0.15},
+    {"id": "health", "name": "בריאות הציבור", "weight": 0.10}
+  ],
+  "labels": [
+    {"min": 8.0, "label": "גבוה מאוד", "color": "red"},
+    {"min": 7.0, "label": "גבוה", "color": "orange-red"},
+    {"min": 6.0, "label": "בינוני-גבוה", "color": "orange"},
+    {"min": 4.0, "label": "בינוני-נמוך", "color": "yellow"},
+    {"min": 0.0, "label": "נמוך", "color": "green"}
+  ],
+  "trend_threshold": 0.3,
+  "min_history_points": 4,
+  "_min_history_points_note": "מספר מינימלי של ערכי עבר כדי לחשב אחוזון. ברירת מחדל טכנית, לא נקבעה במסמכים."
+}
